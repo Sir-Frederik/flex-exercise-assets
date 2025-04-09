@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio Honey Product Card</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border-radius: 25px;
+        overflow: hidden;
+        background-color: #fdf6ed;
+        padding-bottom: 20px;
+      }
+
+      .product-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .product-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+      }
+
+      .product-title h2 {
+        color: #582f0e;
+        font-size: 24px;
+        margin: 0;
+      }
+
+      .product-title p {
+        color: #582f0e;
+        margin-left: 20px;
+        font-size: 18px;
+      }
+
+      .price {
+        color: #582f0e;
+        font-size: 24px;
+      }
+
+      .add-to-cart {
+        margin: 0 auto;
+        padding: 12px 40px;
+        background-color: #f8e2a3;
+        border: none;
+        border-radius: 25px;
+        color: #582f0e;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .add-to-cart:hover {
+        background-color: #f6d47e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="./assets/imgs/honey.jpg" alt="Bio Honey" class="product-image" />
+      <div class="product-info">
+        <div class="product-title">
+          <h2>100% Bio Honey</h2>
+          <p>Italian, not treated</p>
+        </div>
+        <div class="price">7$/kg</div>
+      </div>
+      <button class="add-to-cart">Add to cart</button>
+    </div>
+  </body>
+</html>
